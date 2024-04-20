@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-VariableFont_wght-.ttf);
+}
+.card_title {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px; 
+}
+.card_icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
+.card_value {
+    margin-bottom: 16px;
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+
+}
+.humidity_bar-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar-text, .humidity_bar-text {
+    text-align: center; 
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(57, 57, 57, 1);
+}
+
+.slider-pressure {
+    -webkit-appearance: none;
+    width: 126px;
+    height: 8px;
+    border-radius: 8px;  
+    background: radial-gradient(50% 9453.13% at 50% 50%, rgba(84, 84, 84, 0.4) 0%, rgba(138, 138, 138, 0.4) 45.12%, #DADADA 100%, rgba(218, 218, 218, 0.4) 100%);    outline: none;
+}
+
+.slider-pressure::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%; 
+    background: rgba(245, 244, 244, 1);
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 126px;
+    height: 8px;
+    border-radius: 8px;  
+    background: rgba(218, 218, 218, 0.4);
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%; 
+    background: rgba(245, 244, 244, 1);
+}

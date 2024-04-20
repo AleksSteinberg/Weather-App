@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="weather">
+            <div class="weather__window">
+                <div class="weather__header">
+                    <div class="logo">
+                        <a href=""><img src="img/Logo.svg" alt="" class="logo-element"></a>
+                    </div>
+                    <div class="search">
+                        <input class="search-input" type="search" name="search-input" placeholder="Поиск по городу">
+                        <span class="search-icon"></span>
+                        <span class="clear-icon"></span>
+                    </div>                    
+                </div>
+                 <div class="weather__main">   
+                    <div class="weather__info">
+                        <h4 class="weather__location">Москва</h4>
+                        <p class="weather__day">Суббота, 06 января</p>
+                        <p class="weather__time">11:29</p>
+                        <h3 class="weather__temp">-7</h3>
+                        <p class="weather__sky"><img class="image__sky" src="img/cloudy.svg" alt="">Облачно</p>
+                        <p class="weather__feel-temp">Ощущается как <span>-11</span></p>
+                    </div>
+                    <div class="weather__cards">
+                        <div class="weather__card">  
+                            <div class="card_humidity">
+                                <div class="card_title">Влажность</div>
+                                <div class="card_icon"><img src="icons/humidity.svg" alt=""></div>
+                                <div class="card_value" id="value-humidity"></div>
+                                <div class="card_humidity-bar">
+                                    <input type="range" min="1" max="100" value="75" class="slider" id="range-humidity">
+                                    <div class="humidity_bar-text"> 
+                                        <p>0%</p>
+                                        <p>100%</p>
+                                    </div>
+                                </div>
+                             </div>
+                        </div>
+                        <div class="weather__card">
+                            <div class="card_pressure">
+                                <div class="card_title">Давление</div>
+                                <div class="card_icon"><img src="icons/barometr.svg" alt=""></div>
+                                <div class="card_value" id="value-pressure">0</div>
+                                <div class="card_pressure_bar">
+                                    <input type="range" min="1" max="1000" value="0" class="slider-pressure" id="range-pressure">
+                                    <div class="bar-text"> 
+                                        <p>Повышенное</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weather__card last">
+                            <div class="card_visibilty">
+                                <div class="card_title">Видимость</div>
+                                <div class="card_icon"><img src="icons/visibility.svg" alt=""></div>
+                                <div class="card_value" id="value-visibility"></div>
+                                <div class="card_visibilty-bar">
+                                    <input type="range" min="1" max="100" value="0" class="slider" id="range-visibility">
+                                    <div class="bar-text"> 
+                                        <p>Нормальная</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weather__card">
+                            <div class="card_sunrise">
+                                <div class="card_title">Рассвет</div>
+                                <div class="card_icon"><img src="icons/sunrise.svg" alt=""></div>
+                                <div class="card_value" id="value-sunrise"></div>
+                                <div class="card_sunrise">
+                                    <div class="bar-text"> 
+                                        <p>Прошло: 02:47</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weather__card">
+                            <div class="card_sunset">
+                                <div class="card_title">Закат</div>
+                                <div class="card_icon"><img src="icons/sunset.svg" alt=""></div>
+                                <div class="card_value" id="value-sunset"></div>
+                                <div class="card_sunset">
+                                    <div class="bar-text">
+                                    <p>Осталось: 05:08</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="weather__card last">
+                            <div class="card_wind">
+                                <div class="card_title">Сила ветра</div>
+                                <div class="card_icon"><img src="icons/direction.svg" alt=""></div>
+                                <div class="card_value" id="value-wind"></div>
+                                <div class="card_wind">
+                                    <div class="bar-text"> 
+                                    <p id="wind-direction"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>    
+            </div>
+        </div>
+    </header>
+    <script src="scripts.js"></script>
+    <script src="meteo.js"></script>
+</body>
+</html>
